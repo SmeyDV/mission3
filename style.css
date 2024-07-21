@@ -164,3 +164,28 @@ input::before, select::before {
 #passwordIcon {
   color: white;
 }
+@media only screen and (max-width: 600px) {
+  .form-container {
+    width: 90%;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #1a85ff;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  input, select, .password-container {
+    width: calc(100% - 8px);
+  }
+
+  #password {
+    width: calc(100% - 40px);
+    padding-right: 40px;
+  }
+
+  button {
+    padding: 8px 15px;
+  }
+}
