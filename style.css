@@ -177,7 +177,7 @@ input::before, select::before {
   }
 
   input, select, .password-container {
-    width: calc(100% - 8px);
+    width: 100%;
   }
 
   #password {
@@ -188,6 +188,14 @@ input::before, select::before {
   button {
     padding: 8px 15px;
   }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  #submit, #reset {
+    margin: 5px 0;
+  }
 }
 
 /* Safari Specific Fixes */
@@ -197,7 +205,7 @@ input::before, select::before {
   }
 
   #password {
-    width: calc(100% - 50px);
+    width: calc(100% - 40px);
   }
 
   .form-container {
