@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket Movie</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+  <div class="form-container">
+    <h2>Ticket Movie</h2>
+    <form id="ticketForm">
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <div class="input-container">
+          <i class="fas fa-user"></i>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <div class="input-container">
+          <i class="fas fa-user"></i>
+          <input type="text" id="lastName" name="lastName" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <div class="input-container">
+          <i class="fas fa-envelope"></i>
+          <input type="email" id="email" name="email" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <div class="input-container">
+          <i class="fas fa-phone"></i>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <div class="input-container">
+          <i class="fas fa-venus-mars"></i>
+          <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="age">Age</label>
+        <div class="input-container">
+          <i class="fas fa-birthday-cake"></i>
+          <select id="age" name="age" required>
+            <option value="">Select Age</option>
+            <option value="0-6">0-6</option>
+            <option value="7-12">7-12</option>
+            <option value="13-18">13-18</option>
+            <option value="18+">Above 18</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="movie">Movie</label>
+        <div class="input-container">
+          <i class="fas fa-film"></i>
+          <select id="movie" name="movie" required>
+            <option value="">Select Movie</option>
+            <option value="Inside Out 2">Inside Out 2</option>
+            <option value="My Neighbor Totoro">My Neighbor Totoro</option>
+            <option value="The Breakfast Club">The Breakfast Club</option>
+            <option value="The Wolf of Wall Street">The Wolf of Wall Street</option>
+          </select>
+        </div>
+      </div>
+      <div id="idUpload" class="form-group" style="display: none;">
+        <label for="idFile">Upload ID:</label>
+        <div class="input-container">
+          <i class="fas fa-id-card"></i>
+          <input type="file" id="idFile" name="idFile" accept="image/*" required>
+        </div>
+        <img id="idPreview" src="" alt="ID Preview" style="display: none;">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <div class="password-container input-container">
+          <i class="fas fa-lock"></i>
+          <input type="password" id="password" name="password" required>
+          <button type="button" id="showPassword"><i id="passwordIcon" class="fas fa-eye"></i></button>
+        </div>
+      </div>
+      <div class="button-group">
+        <button type="submit" id="submit"><i class="fas fa-paper-plane"></i> Submit</button>
+        <button type="reset" id="reset"><i class="fas fa-undo"></i> Reset</button>
+      </div>
+    </form>
+    <div id="confirmation"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
